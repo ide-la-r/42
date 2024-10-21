@@ -6,7 +6,7 @@
 /*   By: ide-la-r <ide-la-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:32:59 by ide-la-r          #+#    #+#             */
-/*   Updated: 2024/09/24 16:37:35 by ide-la-r         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:15:26 by ide-la-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ int				ft_isalpha(int c);
 int				ft_isprint(int c);
 size_t			ft_strlen(const char *c);
 void			*ft_memset(void *b, int c, size_t len);
-void			ft_bzero(void *str, size_t n);ccv
+void			ft_bzero(void *str, size_t n);
+void			*ft_memcpy(void *dest, const void *src, size_t n);
 
 #endif
