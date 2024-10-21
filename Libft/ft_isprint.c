@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-la-r <ide-la-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:20:10 by ide-la-r          #+#    #+#             */
-/*   Updated: 2024/10/01 17:39:22 by ide-la-r         ###   ########.fr       */
+/*   Created: 2024/09/18 18:04:32 by ide-la-r          #+#    #+#             */
+/*   Updated: 2024/09/18 18:19:36 by ide-la-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *dest, const void *str, size_t n)
+int	ft_isprint(int c)
 {
-	unsigned char		*d;
-	unsigned const char	*s;
-
-	if 
+	if (c >= 32 && c <= 126)
+		return (1);
+	return (0);
 }

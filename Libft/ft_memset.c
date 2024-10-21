@@ -1,19 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-la-r <ide-la-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:20:10 by ide-la-r          #+#    #+#             */
-/*   Updated: 2024/10/01 17:39:22 by ide-la-r         ###   ########.fr       */
+/*   Created: 2024/09/19 18:13:54 by ide-la-r          #+#    #+#             */
+/*   Updated: 2024/09/20 16:54:35 by ide-la-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *dest, const void *str, size_t n)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char		*d;
-	unsigned const char	*s;
+	unsigned char	*s;
+	size_t			i;
 
-	if 
+	i = 0;
+	s = b;
+	while (i < len)
+	{
+		s[i] = (unsigned char)c;
+		i++;
+	}
+	return (b);
 }

@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-la-r <ide-la-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 18:20:10 by ide-la-r          #+#    #+#             */
-/*   Updated: 2024/10/01 17:39:22 by ide-la-r         ###   ########.fr       */
+/*   Created: 2024/09/18 18:22:48 by ide-la-r          #+#    #+#             */
+/*   Updated: 2024/09/18 18:30:06 by ide-la-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *dest, const void *str, size_t n)
+size_t	ft_strlen(const char *c)
 {
-	unsigned char		*d;
-	unsigned const char	*s;
+	size_t	i;
 
-	if 
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }
