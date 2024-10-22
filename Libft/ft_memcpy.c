@@ -12,44 +12,30 @@
 
 #include "libft.h"
 
+#include <stdio.h>
+
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned const char	*s;
 	unsigned char		*d;
-	size_t				i;
 
-	s = (unsigned char) *src;
-	d = (unsigned char) *dest;
-	i = 0;
-	if (dest == src || n == 0)
-	{
+	s = (unsigned char *) src;
+	d = (unsigned char *) dest;
+	if (!dest && !src)
 		return (dest);
-	}
-	while (n > i)
-	{
-		d[i] = s[i];
-		i++;
-	}
+	while (n-- > 0)
+		*(d++) = *(s++);
 	return (dest);
 }
 
+/*int main() {
 
-/*
-char *s = "hola mundo";
-char *p;
+    char source[] = "hola, mundo!";
+    char destination[20];
 
-p = s;		-> p = "hola mundo";
-*p = *s;		->  p = "h";
+    ft_memcpy(destination, source, 9);
+    destination[9] = "\0";//If you don't put this, it will take the last random one, but it's not that it's bad, it's just like that.
 
-*p = s; esto no se puede
-
-char e = s
-char q = d
-char d = d
-
-char *i = e, q , d; -> sdd
-
-char **z;  z[] = *z		z[1]
-int i = [][];
-
-*/
+    printf("Origen: %s\n", source);
+    printf("Destino: %s\n", destination);
+}*/

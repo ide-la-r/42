@@ -16,8 +16,25 @@ void	*ft_memmove(void *dest, const void *str, size_t n)
 {
 	unsigned char		*d;
 	unsigned const char	*s;
-	
-	if (str1 < str2)
-		return (ft_memcpy(d, s, n));
-	
+	size_t	i;
+
+	d = (unsigned char*)dest;
+	s = (unsigned char*)str;
+	i = 0;
+	if (!s && !d)
+		return (0);
+	if (s < d)
+        ft_memcpy(dest, str, n);
+	else
+        while (n-- > 0)
+            *(d++) = *(s++);
+	return (dest);
 }
+
+/*int main(){
+    char hola[] = "tengo caca!";
+    char hola2[] = "joder joder joder";
+
+    ft_memmove(hola,hola2,14);
+    printf("%s\n", hola);
+}*/
