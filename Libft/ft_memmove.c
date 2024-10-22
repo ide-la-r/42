@@ -32,9 +32,8 @@ void	*ft_memmove(void *dest, const void *str, size_t n)
 }
 
 /*int main(){
-    char hola[] = "tengo caca!";
-    char hola2[] = "joder joder joder";
+    char hola[] = "Hola mundo!";
 
-    ft_memmove(hola,hola2,14);
+    ft_memmove(hola, hola + 3, 6);
     printf("%s\n", hola);
 }*/
