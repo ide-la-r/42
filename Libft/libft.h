@@ -6,13 +6,15 @@
 /*   By: ide-la-r <ide-la-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 17:32:59 by ide-la-r          #+#    #+#             */
-/*   Updated: 2024/10/21 18:15:26 by ide-la-r         ###   ########.fr       */
+/*   Updated: 2024/11/19 18:21:29 by ide-la-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <unistd.h>
+# include <stdlib.h>
+# include <limits.h>
 
 int				ft_isalpha(int c);
 int				ft_isdigit(int c);
@@ -33,7 +35,7 @@ char			*ft_strrchr(const char *str, int c);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 void			*ft_memchr(const void *str, int c, size_t n);
 int				ft_memcmp(const void *s1, const void *s2, size_t n);
-char			*ft_strnstr(const char *haystack, const char *needle, size_t len);
+char			*ft_strnstr(const char *big, const char *little, size_t len);
 int				ft_atoi(const char *str);
 void			*ft_calloc(size_t nmemb, size_t size);
 char			*ft_strdup(const char *s);

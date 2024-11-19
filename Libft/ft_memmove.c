@@ -6,7 +6,7 @@
 /*   By: ide-la-r <ide-la-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 18:20:10 by ide-la-r          #+#    #+#             */
-/*   Updated: 2024/10/24 16:26:08 by ide-la-r         ###   ########.fr       */
+/*   Updated: 2024/11/19 19:37:41 by ide-la-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,19 @@ void	*ft_memmove(void *dest, const void *str, size_t n)
 {
 	unsigned char		*d;
 	unsigned const char	*s;
-	size_t				i;
 
 	d = (unsigned char *)dest;
 	s = (unsigned char *)str;
-	i = 0;
 	if (!s && !d)
 		return (0);
-	if (s < d)
+	if (d < s)
 		ft_memcpy(dest, str, n);
 	else
 	{
-		while (n-- > 0)
+		while (n)
 		{
-			*(d++) = *(s++);
+			n--;
+			((unsigned char *)d)[n] = ((unsigned char *)s)[n];
 		}
 	}
 	return (dest);
